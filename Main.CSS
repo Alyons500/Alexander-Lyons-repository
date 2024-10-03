@@ -1,0 +1,45 @@
+/* selesctor can be an HTML elemaent, it can be a custom style - start with or it can be an id - start with #
+selecctor{
+       property1: value;
+       property2: value;
+
+}
+*/
+header {
+    text-align: center;
+    padding-left: 100px;
+}
+
+body {
+    background-color: #6666e1;
+    color: #f6f6f6;
+    width: 100%;
+}
+nav {
+    height: 600px;
+    width: 200px;
+    float:  left;
+    padding: 5px;
+    line-height: 30px;
+    text-align: center;
+}
+footer {
+    text-align: center;
+    
+
+}
+
+#FunnyMeme {
+   float: center;
+   width: 300px;
+    
+
+}
+
+P{
+    width: 100%;
+    text-align: center;
+}
+h1 {
+    padding-left: 150px;
+}
