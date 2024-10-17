@@ -1,38 +1,34 @@
-
-
-
-
-
-
 function validateForm() {
-    //get the name user entered in the text box an put it in 
-    var name = document.getElementById("fname").value;
-    var email = document.getElementById("lname").value;
-    var age = document.getElementById("zip").value;
+    // set up nickname/ shortcut to our
 
-    console.log("name=" + name);
-    console.log("email=" + email);
-    console.log("age=" + age);
+    var firstname = document.getElementById("fname").value;
+    var lastname  = document.getElementById("lname").value;
+    var zipcode = document.getElementById("zip").value;
+  
 
-    if  (name.trim() == "") {
-        alert("Please enter a name.");
+    // create a new string that concatenates first name + last name 
+
+    var fullname =  "firstname" + + lastname;
+
+    console.log ("lastname"  + firstname);
+    console.log ("lastname"  + lastname);
+    console.log("zipcode"  + zipcode);
+    console.log("full name"  + fullname);
+
+    if (fullname.length > 20 || fullname.length == 1) {
+        document.getElementById("loginStatus").innerHTML = "Please enter a 5 digit zip code";
+        //alert("Please enter a valid name that is less than 20 chararacters ");
     }
-     // make sure email was entered
-    if  (name.trim() == "") {
-        alert("Please enter a email address.");
+    else if(zipcode.length != 5){
+        document.getElementById("loginStatus").innerHTML = "Please enter a 5 digit zip code";
+        //alert("Please enter a 5 digit zip code");
     }
-      //make age is entered 
-    if  (age.trim() == "") {
-        alert("Please enter a age.");
-    }
-
-    // make sure is a number 
-    if (isNaN( age)) {
-        alert(" Please enter a number for the age.")
+    else{
+        document.getElementById("loginStatus").innerHTML = "Please enter a 5 digit zip code";
+        //alert("welcome," + fullName + ",  The secret word is validation.")
     }
 
-
-    //prevent the form submitting
-
+    // we don't this page to submit to a server/another page, 
+   
     return false;
 }
