@@ -8,7 +8,7 @@ function validateForm() {
 
     // create a new string that concatenates first name + last name 
 
-    var fullname =  "firstname" + + lastname;
+    var fullname =  firstname + " " + lastname; 
 
     console.log ("lastname"  + firstname);
     console.log ("lastname"  + lastname);
@@ -16,7 +16,7 @@ function validateForm() {
     console.log("full name"  + fullname);
 
     if (fullname.length > 20 || fullname.length == 1) {
-        document.getElementById("loginStatus").innerHTML = "Please enter a 5 digit zip code";
+        document.getElementById("loginStatus").innerHTML = "Please enter a valid name that is less than 20 chararacters";
         //alert("Please enter a valid name that is less than 20 chararacters ");
     }
     else if(zipcode.length != 5){
@@ -24,7 +24,7 @@ function validateForm() {
         //alert("Please enter a 5 digit zip code");
     }
     else{
-        document.getElementById("loginStatus").innerHTML = "Please enter a 5 digit zip code";
+        document.getElementById("loginStatus").innerHTML = "welcome," + fullName + ",  The secret word is validation.";
         //alert("welcome," + fullName + ",  The secret word is validation.")
     }
 
