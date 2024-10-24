@@ -30,8 +30,15 @@ footer {
 }
 
 #FunnyMeme {
+   position: absolute; /* will this allow the image around */
+   margin: 200px;
+
+
    float: center;
    width: 300px;
+   left: 100px;
+   right: 100px;
+
     
 
 }
